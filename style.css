@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./bg.avif);
+  animation: cosmo 15s linear infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
+}
+
+.moon {
+  width: 120px;
+  height: 120px;
+
+  background-image: url(moon.jpg);
+  border-radius: 50%;
+  animation: cosmo 120s ease-in-out infinite;
+  box-shadow: 1px 1px 183px 21px rgba(250,250,250,0.75);
+-webkit-box-shadow: 1px 1px 183px 21px rgba(250,250,250,0.75);
+-moz-box-shadow: 1px 1px 183px 21px rgba(250,250,250,0.75);
+}
+
+.earth{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+
+    background-image: url(earth.jpg);
+  animation: cosmo 30s linear infinite;
+}
+
+@keyframes cosmo {
+  0% {
+    background-position: left;
+  }
+
+
+  100% {
+    background-position: right;
+  }
+}
